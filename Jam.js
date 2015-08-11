@@ -1,5 +1,3 @@
-alert("Hello world");
-
 function showInfo(data, tabletop) {
     alert("Successfully processed!")
     console.log(data);
