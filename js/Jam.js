@@ -27,10 +27,10 @@ function getRandomIntInclusive(min, max) {
 
 //Show a random index
 function showInfo(data, tabletop) {
-   cheap = (data.cheap.elements[getRandomIntInclusive(0,8)].cheap);
-   moderate = (data.moderate.elements[getRandomIntInclusive(0,8)].moderate);
-   pricey = (data.pricey.elements[getRandomIntInclusive(0,4)].pricey);
-   expensive = (data.expensive.elements[getRandomIntInclusive(0,1)].expensive);
+	cheap = (data.cheap.elements[getRandomIntInclusive(0,8)].cheap);
+	moderate = (data.moderate.elements[getRandomIntInclusive(0,8)].moderate);
+	pricey = (data.pricey.elements[getRandomIntInclusive(0,4)].pricey);
+	expensive = (data.expensive.elements[getRandomIntInclusive(0,2)].expensive);
 }
 
 window.onload = init();
