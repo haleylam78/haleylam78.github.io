@@ -38,21 +38,33 @@ window.onload = init();
 //Display when clicked
 function oneDollar () {
     document.getElementById("changeText").innerHTML = cheap;
+    moderateCalled = false;
+    priceyCalled = false;
+    expensiveCalled = false; 
     cheapCalled = true;
 }
 
 function twoDollar () {
     document.getElementById("changeText").innerHTML = moderate;
+    cheapCalled = false;
+    priceyCalled = false;
+    expensiveCalled = false;
     moderateCalled = true;
 }
 
 function threeDollar () {
     document.getElementById("changeText").innerHTML = pricey;
+    cheapCalled = false;
+    moderateCalled = false;
+    expensiveCalled = false;
     priceyCalled = true;
 }
 
 function fourDollar () {
     document.getElementById("changeText").innerHTML = expensive;
+    cheapCalled = false;
+    moderateCalled = false;
+    priceyCalled = false;
     expensiveCalled = true;
 }
 
