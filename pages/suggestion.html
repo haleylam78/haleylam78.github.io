@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="827443004170-3kdkoqa3dm3qbdn2gkjbagcf77bv9r4o.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <title>Jam - Date Ideas</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/full.css" rel="stylesheet">
+</head>
+    <body class = "full">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="../index.html"><img src="../images/jam-logo.png"></img></a>
+                    <button type="button" class="btn btn-default btn-md"><a href="myProfile.html">My Profile</a></button>
+                    <button type="button" class="btn btn-default btn-md"><a href="aboutUs.html">About Us</a></button>
+                    <button type="button" class="btn btn-default btn-md"><a href="suggestion.html">Suggest a Date</a></button>
+                </div>
+                <!-- Login / Signout Button --> 
+                <div style="float:right">
+                    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" style="padding:10px 0px 10px 0px"></div>
+                    <div><button type="button" class="btn btn-default btn-md btn-info" onclick="signOut();">Sign out</button></div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="col-md-offset-3" id="push">
+            <iframe src="https://docs.google.com/forms/d/1oCI7FlMjI_2I50BNZcG5up1pvoQBe3hzvcFabD7V528/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+
+       <!-- Scripts -->
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/Tabletop.js"></script>
+        <script src="../js/jam.js"></script>
+    </body>
+</html>

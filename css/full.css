@@ -17,3 +17,7 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+
+#push {
+    padding:75px 0px 0px 0px;
+}
