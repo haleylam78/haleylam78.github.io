@@ -11,8 +11,8 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <title>Jam - Date Ideas</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/full.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/full.css" rel="stylesheet">
 </head>
     <body class = "full">
         <!-- Navigation -->
@@ -26,8 +26,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <img src="images/jam-logo.png"></img>
-                    <button type="button" class="btn btn-default btn-md"><a href="pages/myProfile.html">My Profile</a></button>
+                    <a href="../index.html"><img src="../images/jam-logo.png"></img></a>
+                    <button type="button" class="btn btn-default btn-md"><a href="myProfile.html">My Profile</a></button>
                 </div>
                 <!-- Login / Signout Button --> 
                 <div style="float:right">
@@ -36,27 +36,11 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                   <div class="col-md-offset-12">
-                        <img src="images/jam-logo-1.png" style="padding:50px 0px 0px 0px"></img>
-                    </div>
-                    <h1 class = "col-md-12 col-md-offset-12" id="changeText">Click a Price Range to <br> Get a Date Suggestion </h1>
-                    <p class="col-md-9 col-md-offset-12">
-                      <button type="button" class="btn btn-default btn-lg btn-info" onclick="oneDollar();init()">$</button>
-                      <button type="button" class="btn btn-default btn-lg btn-success" onclick="twoDollar();init()">$$</button>
-                      <button type="button" class="btn btn-default btn-lg btn-primary" onclick="threeDollar();init()">$$$</button>
-                      <button type="button" class="btn btn-default btn-lg btn-warning" onclick="fourDollar();init()">$$$$</button>
 
-                      <button type="button" class="btn btn-default btn-lg btn-danger" onclick="saveIdea();init()">Save Idea</button>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/Tabletop.js"></script>
-        <script src="js/jam.js"></script>
+       <!-- Scripts -->
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/Tabletop.js"></script>
+        <script src="../js/jam.js"></script>
     </body>
 </html>
