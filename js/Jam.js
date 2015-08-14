@@ -1,5 +1,3 @@
-
-
 var cheapCalled = false;
 var moderateCalled = false;
 var priceyCalled = false;
@@ -17,10 +15,6 @@ var expensiveLength;
 var priceyLength;
 var moderateLength;
 var cheapLength;
-
-/*
-*Initialize the spreadsheet
-*/
 
 function initCheap() {
 	Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1HOgOyuzD_NILAxZ4iAgfipaJofB-hRL2b7nabg8b6GY/pubhtml',
@@ -45,17 +39,9 @@ function initExpensive(){
 	
 }
 
-/*
-*Get a random index function
-*/
-
 function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-/*
-*Show a random index
-*/
 
 function getDataCheap(data, tabletop){
 	cheapLength = data.cheap.elements.length;
@@ -156,7 +142,6 @@ function saveIdea() {
 		expensiveCalled = false;
 	}
 	console.log(savedIdeas);
-
 }
 
 function signOut() {
