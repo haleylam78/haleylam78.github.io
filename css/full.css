@@ -23,11 +23,7 @@ body {
 }
 
 #myList {
-    width:300px;
-}
-
-#myDIV {
-    width:200px;
+    width:400px;
     height:400px;
     overflow-y:scroll;
 }
