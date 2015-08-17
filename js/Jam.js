@@ -146,6 +146,13 @@ function fourDollar () {
 	expensiveCalled = true;
 }
 
+function newListTag(idea){
+		var listTag = document.createElement("LI");
+		var listText = document.createTextNode(idea);
+		listTag.appendChild(listText);
+		document.getElementById("myList").appendChild(listTag);
+}
+
 /*
 *Function to save ideas to list when save idea button pressed
 */
@@ -153,21 +160,25 @@ function saveIdea() {
 	if (cheapCalled == true){
 		savedIdeas.push(cheapItem);
 		cheapCalled = false;
+		newListTag(cheapItem);
 	}
 	if (moderateCalled == true){
 		savedIdeas.push(moderateItem);
 		moderateCalled = false;
+		newListTag(moderateItem);
 	}
 	if (priceyCalled == true){
-		savedIdeas.push(priceyItem);
+		currentIdea = savedIdeas.push(priceyItem);
 		priceyCalled = false;
+		newListTag(priceyCalled);
 	}
 	if (expensiveCalled == true){
-		savedIdeas.push(expensiveItem);
+		currentIdea = savedIdeas.push(expensiveItem);
 		expensiveCalled = false;
+		newListTag(expensiveItem)
 	}
 	console.log(savedIdeas);
-	displayList();
+	//newListTag(currentIdea);
 }
 
 /*
@@ -183,20 +194,20 @@ function signOut() {
 /*
 *Function to call specific idea from list for display
 */
-function displayList(){
+/*function displayList(){
 	alert("Here");
-	for (i = 0; i <savedIdeas.length; i++){
+	for (i = 0; i < savedIdeas.length; i++){
 		var currentIdea = savedIdeas[i]
 		newListTag(currentIdea);
 	}
-}
+}*/
 
 /*
 *Funtion to create new <li> element for saved ideas list
 */ 
-function newListTag(idea){
+/*function newListTag(idea){
 		var listTag = document.createElement("LI");
-		var listText = document.createTextNode(currentIdea);
+		var listText = document.createTextNode(idea);
 		listTag.appendChild(listText);
 		document.getElementById("myList").appendChild(listTag);
-}
+}*/
