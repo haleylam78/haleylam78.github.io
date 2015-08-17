@@ -146,12 +146,9 @@ function fourDollar () {
 	expensiveCalled = true;
 }
 
-<<<<<<< HEAD
-=======
 /*
 *Function to save ideas to list when save idea button pressed
 */
->>>>>>> origin
 function saveIdea() {
 	if (cheapCalled == true){
 		savedIdeas.push(cheapItem);
@@ -175,43 +172,18 @@ function saveIdea() {
 	}
 }
 
-<<<<<<< HEAD
 function displayList() {
     for (var i = 0; i < savedIdeas.length; i++){
         document.getElementById("display").innerHTML = savedIdeas;
     }
 }
 
-=======
 /*
 *Function that signs someone out of their account when logged on
 */
->>>>>>> origin
 function signOut() {
 	var auth2 = gapi.auth2.getAuthInstance();
 	auth2.signOut().then(function () {
 	  console.log('User signed out.');
 	});
-}
-
-/*
-*Function to call specific idea from list for display
-*/
-function displayList(){
-	for (i = 0; i <savedIdeas.length-1; i++){
-		savedIdeas[i] = currentIdea
-		newListTag();
-		//document.getElementById("createList").innerHTML = savedIdeas[i];
-	}
-}
-
-/*
-*Funtion to create new <li> element for saved ideas list
-*/ 
-function newListTag(){
-	//document.getElementById("createList").innerHTML = 
-		var listTag = document.createElement("li");
-		listTag.appendChild("currentIdea")
-		var currentTag = document.getElementById("createList")
-		document.body.insertBefore(listTag, currentTag);
 }
