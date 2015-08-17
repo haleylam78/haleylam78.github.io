@@ -18,6 +18,7 @@ var expensiveLength;
 var priceyLength;
 var moderateLength;
 var cheapLength;
+var currentIdea;
 
 /*
 *Create cheap, moderate, pricey and expensive list
@@ -166,6 +167,9 @@ function saveIdea() {
 		expensiveCalled = false;
 	}
 	console.log(savedIdeas);
+	for (i = 0; i <savedIdeas.length-1; i++){
+		document.getElementsByClassName("createList").innerHTML = saveIdeas[i];
+	}
 }
 
 /*
@@ -176,4 +180,26 @@ function signOut() {
 	auth2.signOut().then(function () {
 	  console.log('User signed out.');
 	});
+}
+
+/*
+*Function to call specific idea from list for display
+*/
+function displayList(){
+	for (i = 0; i <savedIdeas.length-1; i++){
+		savedIdeas[i] = currentIdea
+		newListTag();
+		//document.getElementById("createList").innerHTML = savedIdeas[i];
+	}
+}
+
+/*
+*Funtion to create new <li> element for saved ideas list
+*/ 
+function newListTag(){
+	//document.getElementById("createList").innerHTML = 
+		var listTag = document.createElement("li");
+		listTag.appendChild("currentIdea")
+		var currentTag = document.getElementById("createList")
+		document.body.insertBefore(listTag, currentTag);
 }
