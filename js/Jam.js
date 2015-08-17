@@ -168,12 +168,12 @@ function saveIdea() {
 		newListTag(moderateItem);
 	}
 	if (priceyCalled == true){
-		currentIdea = savedIdeas.push(priceyItem);
+		savedIdeas.push(priceyItem);
 		priceyCalled = false;
 		newListTag(priceyItem);
 	}
 	if (expensiveCalled == true){
-		currentIdea = savedIdeas.push(expensiveItem);
+		savedIdeas.push(expensiveItem);
 		expensiveCalled = false;
 		newListTag(expensiveItem)
 	}
@@ -203,7 +203,7 @@ function signOut() {
 }*/
 
 /*
-*Funtion to create new <li> element for saved ideas list
+*Function to create new <li> element for saved ideas list
 */ 
 /*function newListTag(idea){
 		var listTag = document.createElement("LI");
