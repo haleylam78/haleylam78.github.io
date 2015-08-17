@@ -123,7 +123,6 @@ function fourDollar () {
 	expensiveCalled = true;
 }
 
-
 function saveIdea() {
 	if (cheapCalled == true){
 		savedIdeas.push(cheapItem);
@@ -142,6 +141,12 @@ function saveIdea() {
 		expensiveCalled = false;
 	}
 	console.log(savedIdeas);
+}
+
+function displayList() {
+    for (var i = 0; i < savedIdeas.length; i++){
+        document.getElementById("display").innerHTML = savedIdeas;
+    }
 }
 
 function signOut() {
