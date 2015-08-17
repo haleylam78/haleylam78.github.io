@@ -167,9 +167,6 @@ function saveIdea() {
 		expensiveCalled = false;
 	}
 	console.log(savedIdeas);
-	for (i = 0; i <savedIdeas.length-1; i++){
-		document.getElementsByClassName("createList").innerHTML = saveIdeas[i];
-	}
 }
 
 function displayList() {
