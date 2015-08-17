@@ -167,9 +167,7 @@ function saveIdea() {
 		expensiveCalled = false;
 	}
 	console.log(savedIdeas);
-	for (i = 0; i <savedIdeas.length-1; i++){
-		document.getElementsByClassName("createList").innerHTML = saveIdeas[i];
-	}
+	displayList();
 }
 
 /*
@@ -186,20 +184,19 @@ function signOut() {
 *Function to call specific idea from list for display
 */
 function displayList(){
-	for (i = 0; i <savedIdeas.length-1; i++){
-		savedIdeas[i] = currentIdea
-		newListTag();
-		//document.getElementById("createList").innerHTML = savedIdeas[i];
+	alert("Here");
+	for (i = 0; i <savedIdeas.length; i++){
+		var currentIdea = savedIdeas[i]
+		newListTag(currentIdea);
 	}
 }
 
 /*
 *Funtion to create new <li> element for saved ideas list
 */ 
-function newListTag(){
-	//document.getElementById("createList").innerHTML = 
-		var listTag = document.createElement("li");
-		listTag.appendChild("currentIdea")
-		var currentTag = document.getElementById("createList")
-		document.body.insertBefore(listTag, currentTag);
+function newListTag(idea){
+		var listTag = document.createElement("LI");
+		var listText = document.createTextNode(currentIdea);
+		listTag.appendChild(listText);
+		document.getElementById("myList").appendChild(listTag);
 }
