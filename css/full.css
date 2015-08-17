@@ -34,10 +34,17 @@ body {
 
 #title {
 	border-width: 7px;
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 	font-size: 30px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .list {
 	background-color: #ffffff;
+}
+
+li {
+	border-width: 10px;
+	padding-width: 10px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }

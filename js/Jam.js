@@ -50,7 +50,9 @@ function initExpensive(){
 *Create function to get a random number for list
 */
 function getRandomIntInclusive(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+	var beautifulbutterflywaterbottle = Math.floor(Math.random() * (max - min + 1)) + min;
+ 	console.log(beautifulbutterflywaterbottle);
+ 	return beautifulbutterflywaterbottle;
 }
 
 /*
