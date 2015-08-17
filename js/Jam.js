@@ -1,3 +1,6 @@
+/*
+*Do the variable thing
+*/
 var cheapCalled = false;
 var moderateCalled = false;
 var priceyCalled = false;
@@ -16,6 +19,9 @@ var priceyLength;
 var moderateLength;
 var cheapLength;
 
+/*
+*Create cheap, moderate, pricey and expensive list
+*/
 function initCheap() {
 	Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1HOgOyuzD_NILAxZ4iAgfipaJofB-hRL2b7nabg8b6GY/pubhtml',
 					 callback: getDataCheap} )
@@ -39,10 +45,16 @@ function initExpensive(){
 	
 }
 
+/*
+*Create function to get a random number for list
+*/
 function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/*
+*Functions to create lists of date ide3as
+*/
 function getDataCheap(data, tabletop){
 	cheapLength = data.cheap.elements.length;
 	for (var i = 0; i<cheapLength; i++){
@@ -69,11 +81,18 @@ function getDataExpensive(data, tabletop){
 	}
 }
 
+
+/*
+*Call functions which call list creation with tabletop
+*/
 initCheap();
 initModerate();
 initPricey();
 initExpensive();
 
+/*
+*Create a new idea function
+*/
 function resetButtonCheap(){
 	cheapItem = cheapList[getRandomIntInclusive(0,cheapLength-1)];
 	oneDollar();
@@ -91,6 +110,9 @@ function resetButtonExpensive(){
 	fourDollar();
 }
 
+/*
+*Display button as text function]
+*/
 function oneDollar () {
 	document.getElementById("changeText").innerHTML = cheapItem;
 	moderateCalled = false;
@@ -123,7 +145,9 @@ function fourDollar () {
 	expensiveCalled = true;
 }
 
-
+/*
+*Function to save ideas to list when save idea button pressed
+*/
 function saveIdea() {
 	if (cheapCalled == true){
 		savedIdeas.push(cheapItem);
@@ -144,6 +168,9 @@ function saveIdea() {
 	console.log(savedIdeas);
 }
 
+/*
+*Function that signs someone out of their account when logged on
+*/
 function signOut() {
 	var auth2 = gapi.auth2.getAuthInstance();
 	auth2.signOut().then(function () {
