@@ -170,7 +170,7 @@ function saveIdea() {
 	if (priceyCalled == true){
 		currentIdea = savedIdeas.push(priceyItem);
 		priceyCalled = false;
-		newListTag(priceyCalled);
+		newListTag(priceyItem);
 	}
 	if (expensiveCalled == true){
 		currentIdea = savedIdeas.push(expensiveItem);
