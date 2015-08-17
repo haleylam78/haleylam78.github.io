@@ -28,10 +28,16 @@ body {
     overflow-y:scroll;
 }
 
-#list {
+#listTitle {
 	font-size: 25px;
 }
 
 #title {
+	border-width: 7px;
+	background-color: #ffffff;
 	font-size: 30px;
+}
+
+.list {
+	background-color: #ffffff;
 }
