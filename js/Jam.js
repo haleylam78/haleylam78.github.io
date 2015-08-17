@@ -1,3 +1,6 @@
+/*
+*Do the variable thing
+*/
 var cheapCalled = false;
 var moderateCalled = false;
 var priceyCalled = false;
@@ -15,7 +18,11 @@ var expensiveLength;
 var priceyLength;
 var moderateLength;
 var cheapLength;
+var currentIdea;
 
+/*
+*Create cheap, moderate, pricey and expensive list
+*/
 function initCheap() {
 	Tabletop.init( { key: 'https://docs.google.com/spreadsheets/d/1HOgOyuzD_NILAxZ4iAgfipaJofB-hRL2b7nabg8b6GY/pubhtml',
 					 callback: getDataCheap} )
@@ -39,10 +46,16 @@ function initExpensive(){
 	
 }
 
+/*
+*Create function to get a random number for list
+*/
 function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/*
+*Functions to create lists of date ide3as
+*/
 function getDataCheap(data, tabletop){
 	cheapLength = data.cheap.elements.length;
 	for (var i = 0; i<cheapLength; i++){
@@ -69,11 +82,18 @@ function getDataExpensive(data, tabletop){
 	}
 }
 
+
+/*
+*Call functions which call list creation with tabletop
+*/
 initCheap();
 initModerate();
 initPricey();
 initExpensive();
 
+/*
+*Create a new idea function
+*/
 function resetButtonCheap(){
 	cheapItem = cheapList[getRandomIntInclusive(0,cheapLength-1)];
 	oneDollar();
@@ -91,6 +111,9 @@ function resetButtonExpensive(){
 	fourDollar();
 }
 
+/*
+*Display button as text function]
+*/
 function oneDollar () {
 	document.getElementById("changeText").innerHTML = cheapItem;
 	moderateCalled = false;
@@ -123,6 +146,12 @@ function fourDollar () {
 	expensiveCalled = true;
 }
 
+<<<<<<< HEAD
+=======
+/*
+*Function to save ideas to list when save idea button pressed
+*/
+>>>>>>> origin
 function saveIdea() {
 	if (cheapCalled == true){
 		savedIdeas.push(cheapItem);
@@ -141,17 +170,48 @@ function saveIdea() {
 		expensiveCalled = false;
 	}
 	console.log(savedIdeas);
+	for (i = 0; i <savedIdeas.length-1; i++){
+		document.getElementsByClassName("createList").innerHTML = saveIdeas[i];
+	}
 }
 
+<<<<<<< HEAD
 function displayList() {
     for (var i = 0; i < savedIdeas.length; i++){
         document.getElementById("display").innerHTML = savedIdeas;
     }
 }
 
+=======
+/*
+*Function that signs someone out of their account when logged on
+*/
+>>>>>>> origin
 function signOut() {
 	var auth2 = gapi.auth2.getAuthInstance();
 	auth2.signOut().then(function () {
 	  console.log('User signed out.');
 	});
+}
+
+/*
+*Function to call specific idea from list for display
+*/
+function displayList(){
+	for (i = 0; i <savedIdeas.length-1; i++){
+		savedIdeas[i] = currentIdea
+		newListTag();
+		//document.getElementById("createList").innerHTML = savedIdeas[i];
+	}
+}
+
+/*
+*Funtion to create new <li> element for saved ideas list
+*/ 
+function newListTag(){
+	//document.getElementById("createList").innerHTML = 
+		var listTag = document.createElement("li");
+		listTag.appendChild("currentIdea")
+		var currentTag = document.getElementById("createList")
+		document.body.insertBefore(listTag, currentTag);
 }

@@ -22,8 +22,13 @@ body {
     padding:75px 0px 0px 0px;
 }
 
+<<<<<<< HEAD
 #myDIV {
     width:200px;
     height:400px;
     overflow-y:scroll;
+=======
+#list {
+	font-size: 50px;
+>>>>>>> origin
 }
