@@ -24,6 +24,10 @@ body {
 
 #myList {
     width:300px;
+}
+
+#myDIV {
+    width:200px;
     height:400px;
     overflow-y:scroll;
 }
