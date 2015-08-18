@@ -43,9 +43,39 @@ li {
 	border-width: 10px;
 	padding-width: 10px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+<<<<<<< HEAD
     color: #ffffff;
 }
 
 #logo {
     background-color: none! important;
 }
+=======
+	color: #000000;
+}
+
+#changeText {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+#title {
+	color: #ffffff;
+}
+
+.btn{
+	padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #000000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.sickStyle {
+	padding: 8px 30px;
+}
+
+>>>>>>> origin/master
