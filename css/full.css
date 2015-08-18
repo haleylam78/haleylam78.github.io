@@ -78,6 +78,10 @@ li {
 	background-color: #000000
 }
 
+#logo {
+	background-color: none! important;
+}
+
 /*#about {
 	color: #ffffff;
 }*/
