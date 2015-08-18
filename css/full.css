@@ -47,7 +47,7 @@ li {
 	border-width: 10px;
 	padding-width: 10px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #ffffff;
+	color: #000000;
 }
 
 #changeText {
@@ -69,3 +69,8 @@ li {
     background-color: #000000;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
+.sickStyle {
+	padding: 8px 30px;
+}
+
