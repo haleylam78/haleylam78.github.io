@@ -11,7 +11,7 @@ body {
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .full {
-    background: url('../images/fireworks.jpg') no-repeat center center fixed;
+    background: url('../images/air-balloon.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -34,7 +34,6 @@ body {
 
 #title {
 	border-width: 7px;
-	/*background-color: #ffffff;*/
 	font-size: 30px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -47,7 +46,7 @@ li {
 	border-width: 10px;
 	padding-width: 10px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #000000;
+    color: #ffffff;
 }
 
 #changeText {
