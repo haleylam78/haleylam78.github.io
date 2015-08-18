@@ -82,3 +82,16 @@ li {
 	background-color: none! important;
 }
 
+#signOut {
+	padding: 10px 25px;
+}
+
+.text{
+	color: #ffffff;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.par{
+	background-color: rgba(0,0,0,0.4);
+	font-size:14px;
+}
