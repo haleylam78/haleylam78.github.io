@@ -180,7 +180,6 @@ function saveIdea() {
 		newListTag(expensiveItem)
 	}
 	console.log(savedIdeas);
-	//newListTag(currentIdea);
 }
 
 /*
@@ -192,24 +191,3 @@ function signOut() {
 	  console.log('User signed out.');
 	});
 }
-
-/*
-*Function to call specific idea from list for display
-*/
-/*function displayList(){
-	alert("Here");
-	for (i = 0; i < savedIdeas.length; i++){
-		var currentIdea = savedIdeas[i]
-		newListTag(currentIdea);
-	}
-}*/
-
-/*
-*Function to create new <li> element for saved ideas list
-*/ 
-/*function newListTag(idea){
-		var listTag = document.createElement("LI");
-		var listText = document.createTextNode(idea);
-		listTag.appendChild(listText);
-		document.getElementById("myList").appendChild(listTag);
-}*/

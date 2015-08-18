@@ -61,6 +61,7 @@ li {
 }
 
 .btn{
+	color: #ffffff;
 	padding: 14px 24px;
     border: 0 none;
     font-weight: 700;
@@ -74,3 +75,10 @@ li {
 	padding: 8px 30px;
 }
 
+.navbar {
+	background-color: #000000
+}
+
+/*#about {
+	color: #ffffff;
+}*/
