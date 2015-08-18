@@ -39,7 +39,7 @@ body {
 }
 
 .list {
-	background-color: rgba(255,255,255,0.5);;
+	background-color: rgba(255,255,255,0.5);
 }
 
 li {
@@ -75,13 +75,10 @@ li {
 }
 
 .navbar {
-	background-color: #000000
+	background-color: rgba(164,153,146,0.5);
 }
 
 #logo {
 	background-color: none! important;
 }
 
-/*#about {
-	color: #ffffff;
-}*/
